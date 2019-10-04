@@ -1,0 +1,18 @@
+<h2>Mon Blog</h2>
+<ul class="list-group">
+  <li *ngFor="let post of posts">
+    <div 
+      [class]="getClass(post)"
+      [style.color]="getColor(post)" 
+      [style.background-color]= "getBackgroundColor(post)">
+      <span class="titre">{{post.titre}}</span>
+      <span class="badge">{{post.created_at | date:'short'}}</span> 
+      <br>
+      <span class="contenu">{{post.content}}</span> 
+      <br>
+      <input type=button (click)="onAime(post)" class="boutonAime" value="J'aime"> 
+      <input type=button (click)="onAimePas(post)" class="boutonAimePas" value="Je n'aime pas">
+      <span class="contenu">Popularité : {{post.loveIts}}</span>
+    </div> 
+  </li>
+</ul>
