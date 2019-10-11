@@ -1,0 +1,33 @@
+#formmep{
+    margin-top: 150px;
+}
+
+#formmep label{
+    display: inline-block;
+	width: 150px;
+    margin-top: 10px;
+    padding-right: 2%;
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+#formmep input[type="text"]{
+    margin-left: 2%;
+	width: 58%;
+    margin-top: 10px;
+}
+
+.submit{
+	border: #DDEEFF 1px solid;
+    width: 27%;
+    margin-left: 30%;
+}
+
+#formmep textarea{
+    margin-left: 2%;
+    width: 58%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+

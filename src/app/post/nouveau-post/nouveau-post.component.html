@@ -1,0 +1,18 @@
+
+<form id="formmep" [formGroup]="newPostForm" (ngSubmit)="onSavePost()" >
+  <fieldset>
+    <p>
+      <label for="sujet">Créer un nouveau sujet</label><input type="text" name="titre" formControlName="titre">
+    </p>
+    <p>
+      <label for="Auteur">Auteur</label><label for="nom">nom</label>
+    </p>
+    <p>
+      <label for="contenu">Contenu de l'article</label><textarea formControlName="content" name="content"></textarea>
+    </p>
+    <p>
+      <input type="submit" name="envoyer" value="Envoyer" class="submit">
+    </p>
+  </fieldset>
+</form>
+

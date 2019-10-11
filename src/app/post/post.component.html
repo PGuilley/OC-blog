@@ -1,18 +1,25 @@
-<h2>Mon Blog</h2>
+
+<h2>Bienvenue <span *ngIf="!authStatus">{{nom}}</span></h2>
 <ul class="list-group">
-  <li *ngFor="let post of posts">
+  <li *ngFor="let unpost of posts; let i = index">
     <div 
-      [class]="getClass(post)"
-      [style.color]="getColor(post)" 
-      [style.background-color]= "getBackgroundColor(post)">
-      <span class="titre">{{post.titre}}</span>
-      <span class="badge">{{post.created_at | date:'short'}}</span> 
-      <br>
-      <span class="contenu">{{post.content}}</span> 
-      <br>
-      <input type=button (click)="onAime(post)" class="boutonAime" value="J'aime"> 
-      <input type=button (click)="onAimePas(post)" class="boutonAimePas" value="Je n'aime pas">
-      <span class="contenu">Popularité : {{post.loveIts}}</span>
+      [class]="getClass(unpost)"
+      [style.color]="getColor(unpost)" 
+      [style.background-color]= "getBackgroundColor(unpost)"
+      (click)="onViewPost(i)"
+      >
+        <span class="titre">{{unpost.titre}}</span>
+        <span class="badgedroit">{{unpost.created_at | date:'short'}}</span> 
+        <br>
+        <span class="contenu">{{unpost.content}}</span> 
+        <br>
+        <button type=button (click)="onAime(unpost)" class="boutonAime" value="J'aime">
+          <span class="glyphicon glyphicon-thumbs-up"></span>
+        </button>
+        <button type=button (click)="onAimePas(unpost)" class="boutonAimePas" value="Je n'aime pas">
+            <span class="glyphicon glyphicon-thumbs-down"></span>
+        </button>
+        <span class="contenu">Popularité : {{unpost.loveIts}}</span>
     </div> 
   </li>
 </ul>

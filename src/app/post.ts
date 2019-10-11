@@ -1,6 +1,9 @@
+import { DatePipe } from "../../node_modules/@angular/common";
+
 export class Post {
-    titre: string;
-    content: string;
-    loveIts: number;
-    created_at: Date;
+  constructor(public titre: string, 
+              public content: string, 
+              public auteur: string, 
+              public loveIts: number, 
+              public created_at: Date){}
   } 

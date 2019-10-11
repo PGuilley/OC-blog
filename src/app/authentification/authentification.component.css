@@ -1,0 +1,95 @@
+#formmep{
+    margin-top: 150px;
+    margin-left: 30%;
+}
+
+    #formmep label{
+        display: inline-block;
+        width: 150px;
+        padding-right: 2%;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: small;
+        color: white;
+        padding: 0.3em 0.7em 0 0.7em;
+        background-color:#405061;
+        line-height: 1.7em;
+        position: relative;
+        left: 10px;
+        height: 2.1em;
+        border-radius: 4px 0 0 4px;
+    }
+
+    #formmep input[type="text"]{
+        margin-left: 2%;
+        width: 25%;
+        margin-top: 10px;
+    }
+
+    #formmep input[type="password"]{
+        margin-left: 2%;
+        width: 25%;
+    }
+
+#submit{
+	border: #DDEEFF 1px solid;
+    width: 27%;
+    font-size: small;
+    color: white;
+    padding: 0.3em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 0em;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    left: 85px;
+    top: 0px;
+    height: 2.5em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+#lienInscription {
+    font-size: small;
+    color: white;
+    padding: 0.3em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1em;
+    position: relative;
+    text-align: right;
+    display: inline-block;
+    left: 80px;
+    top: 0px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.disabled {
+    display: inline-block;
+    width: 150px;
+    padding-right: 2%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: small;
+    color: white;
+    opacity: 0.5;
+    padding: 0.3em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1.7em;
+    position: relative;
+    left: 10px;
+    height: 2.1em;
+    border-radius: 4px 0 0 4px;
+}

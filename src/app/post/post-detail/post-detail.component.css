@@ -1,0 +1,38 @@
+.div{
+    margin-top: 50px;
+    margin-left: 1%;
+}
+
+#titre{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: medium;
+    color: white;
+    padding: 0.3em 0.7em 0 0.7em;
+    background-color:#405061;
+    line-height: 1.7em;
+    height: 2.1em;
+    border-radius: 4px 0 0 4px;
+}
+
+#date{
+	border: #DDEEFF 1px solid;
+    font-size: small;
+    padding: 0.3em 0.7em 0 0.7em;
+    line-height: 1em;
+    position: relative;
+    text-align: right;
+    float: right;
+    top: 0px;
+    height: 1.7em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+#legend {
+    padding: 0px 3px;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: left;
+    float: left;
+}

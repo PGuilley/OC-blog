@@ -1,0 +1,25 @@
+<form id="nwf" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <fieldset class="champ">
+    <legend>Créer un compte</legend>
+    <p>
+      <label for="emailNewUser" [class.disabled]='!emailNewUser'>email</label>
+      <input type="text" name="emailNewUser" id="emailNewUser" formControlName="emailNewUser" [(ngModel)]="emailNewUser">
+    </p>
+    <p>
+      <label for="passwordNewUser" [class.disabled]='!passwordNewUser'>mot de passe</label>
+      <input type="text" name="passwordNewUser" id="passwordNewUser" formControlName="passwordNewUser" [(ngModel)]="passwordNewUser">
+    </p>
+    <p>
+      <label for="passwordVerifNewUser" [class.disabled]='!passwordVerifNewUser'>mot de passe</label>
+      <input type="text" name="passwordVerifNewUser" id="passwordVerifNewUser" formControlName="passwordVerifNewUser" [(ngModel)]="passwordVerifNewUser">
+    </p>
+  </fieldset>
+  <fieldset class="bas">
+    <p>
+      <button type="submit" name="envoyer" value="Envoyer" id="submit" 
+      [disabled]="userForm.invalid" 
+      [class.disabled]="(userForm.invalid)||(passwordNewUser!=passwordVerifNewUser)">Inscription</button>
+    </p>
+  </fieldset>
+</form>
+<p class="text-danger">{{ errorMessage}}</p>

@@ -1,0 +1,22 @@
+<form id="formmep" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <fieldset class="champ">
+    <legend>Informations</legend>
+    <p>
+      <label for="sujet" [class.disabled]='!email'>identifiant</label>
+      <input type="text" name="email" id="email" formControlName="email" [(ngModel)]="email">
+    </p>
+    <p>
+      <label for="mdp" [class.disabled]='!password'>mot de passe</label>
+      <input type="text" name="password" id="password" formControlName="password" [(ngModel)]="password">
+    </p>
+  </fieldset>
+  <fieldset class="bas">
+    <legend>Validations</legend>
+    <p>
+      <a routerLink="/new-user" id="lienInscription">Pas encore inscrit? cliquez ici!</a>
+    </p>
+    <p>
+      <button type="submit" name="envoyer" value="Envoyer" id="submit" [disabled]="!userForm.valid" [class.disabled]="userForm.invalid">Envoyer</button>
+    </p>
+  </fieldset>
+</form>
